@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+
+<header>
+    <h1>Contacto NBA Fans</h1>
+    <img src="img/nba.jpg" alt="NBA logo" width="200">
+    <nav>
+        <a href="index.html">Inicio</a> |
+        <a href="info.html">Información</a> |
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<main>
+
+<form method="POST" action="">
+
+<fieldset>
+    <legend>Datos personales</legend>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="pass">Contraseña:</label>
+    <input type="password" id="pass" name="pass"><br><br>
+</fieldset>
+
+<fieldset>
+    <legend>Preferencias</legend>
+
+    <p>Equipo favorito:</p>
+    <input type="radio" id="lakers" name="equipo">
+    <label for="lakers">Lakers</label>
+
+    <input type="radio" id="otro" name="equipo">
+    <label for="otro">Otro</label>
+
+    <p>Intereses:</p>
+    <input type="checkbox" id="noticias">
+    <label for="noticias">Noticias</label>
+
+    <input type="checkbox" id="estadisticas">
+    <label for="estadisticas">Estadísticas</label>
+</fieldset>
+
+<fieldset>
+    <legend>Mensaje</legend>
+
+    <label for="mensaje">Comentario:</label><br>
+    <textarea id="mensaje"></textarea><br><br>
+
+    <label for="jugador">Jugador favorito:</label>
+    <select id="jugador">
+        <option>Luka Dončić</option>
+        <option>LeBron James</option>
+        <option>Otro</option>
+    </select>
+</fieldset>
+
+<br>
+<input type="submit" value="Enviar">
+<input type="reset" value="Resetear">
+
+</form>
+
+</main>
+
+<footer>
+ <p>&copy;Facundo Verdu & Facundo Cayampi</p>
+</footer>
+
+</body>
+</html>
