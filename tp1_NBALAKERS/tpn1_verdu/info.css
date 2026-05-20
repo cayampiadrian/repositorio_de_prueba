@@ -68,7 +68,9 @@ section:hover {
     transform: translateY(-5px);
 }
 
-p {
+p,
+li,
+dd {
     line-height: 1.8;
 
     font-size: 1.05rem;
@@ -82,6 +84,18 @@ p {
 
 .imagen-nba:hover {
     transform: scale(1.03);
+}
+
+table {
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+thead {
+    background-color: var(--lakers-purple);
+
+    color: white;
 }
 
 .btn-purple {
@@ -98,6 +112,8 @@ p {
     padding: 10px 25px;
 
     transition: all 0.3s ease;
+
+    text-decoration: none;
 }
 
 .btn-purple:hover {
@@ -114,6 +130,10 @@ footer {
     );
 
     color: white;
+}
+
+footer p {
+    color: #ccc;
 }
 
 @keyframes fadeInDown {
@@ -139,5 +159,9 @@ footer {
 
     nav .btn {
         margin-bottom: 10px;
+    }
+
+    .imagen-nba {
+        max-width: 100%;
     }
 }
